@@ -1,0 +1,23 @@
+{
+  "name": "eventhash",
+  "description": "Hashchange event shim",
+  "version": "0.1.0",
+  "keywords": [
+    "hashchange",
+    "event"
+  ],
+  "repository": "andrepolischuk/eventhash",
+  "dependencies": {
+    "component/event": "^0.1.4",
+    "andrepolischuk/ies": "^0.2.0"
+  },
+  "development": {
+    "component/assert": "^0.5.0",
+    "andrepolischuk/uniquid": "^1.0.0"
+  },
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "license": "MIT"
+}

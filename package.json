@@ -1,0 +1,20 @@
+{
+  "name": "eventhash",
+  "description": "Hashchange event shim",
+  "version": "0.1.0",
+  "keywords": [
+    "hashchange",
+    "event"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andrepolischuk/eventhash.git"
+  },
+  "dependencies": {
+    "component-event": "^0.1.4",
+    "ies": "^0.2.0"
+  },
+  "main": "index.js",
+  "author": "Andrey Polischuk <andre.polischuk@gmail.com>",
+  "license": "MIT"
+}
