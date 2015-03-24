@@ -27,7 +27,8 @@ var support = 'onhashchange' in window && !(ies && ies < 8);
 
 /**
  * Expose onhashchange
- * @param {Function} fn
+ * @param  {Function} fn
+ * @return {Function}
  * @api public
  */
 
@@ -39,6 +40,8 @@ module.exports = function(fn) {
   } else {
     events.bind(window, 'hashchange', fn);
   }
+
+  return fn;
 };
 
 /**
