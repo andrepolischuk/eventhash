@@ -7,7 +7,7 @@
   Browser:
 
 ```html
-<script src="https://cdn.rawgit.com/andrepolischuk/eventhash/0.1.0/eventhash.min.js"></script>
+<script src="https://cdn.rawgit.com/andrepolischuk/eventhash/0.2.0/eventhash.min.js"></script>
 ```
 
   Component(1):
