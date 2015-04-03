@@ -4,10 +4,10 @@
 
 ## Instalation
 
-  Browser:
+  UMD:
 
 ```html
-<script src="https://cdn.rawgit.com/andrepolischuk/eventhash/0.2.0/eventhash.min.js"></script>
+<script src="https://cdn.rawgit.com/andrepolischuk/eventhash/0.3.0/eventhash.min.js"></script>
 ```
 
   Component(1):
@@ -24,15 +24,23 @@ $ npm install eventhash
 
 ## API
 
-### eventhash(fn)
+### eventhash.bind(fn)
 
-  Set onhashchange handler
+  Bind event `hashchange` handler
 
 ```js
-eventhash(function() {
+eventhash.bind(function() {
 
 });
 ```
+
+### eventhash(fn)
+
+  `eventhash.bind` alias
+
+### eventhash.unbind(fn)
+
+  Unbind event 'hashchange' handler
 
 ## License
 

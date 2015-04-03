@@ -122,32 +122,43 @@ var location = window.location;
 var support = 'onhashchange' in window && !(ies && ies < 8);
 
 /**
- * Expose onhashchange
+ * Running fix for IE<8
+ */
+
+var running;
+
+/**
+ * Expose bind
+ */
+
+module.exports = bind.bind = bind;
+
+/**
+ * Expose bind
  * @param  {Function} fn
  * @return {Function}
  * @api public
  */
 
-module.exports = function(fn) {
+function bind(fn) {
   if (typeof fn !== 'function') return;
-
-  if (!support) {
-    fix(fn);
-  } else {
-    events.bind(window, 'hashchange', fn);
-  }
-
+  if (support) return events.bind(window, 'hashchange', fn);
+  if (running) return;
+  running = true;
+  fix(fn);
   return fn;
-};
+}
 
 /**
- * onhashchange fix for IE < 8
+ * onhashchange fix for IE<8
  * @param {Function} fn
  * @param {String} path
  * @api private
  */
 
 function fix(fn, path) {
+  if (!running) return;
+
   if (path !== location.hash) {
     fn();
     path = location.hash;
@@ -157,6 +168,20 @@ function fix(fn, path) {
     fix(fn, path);
   }, 500);
 }
+
+/**
+ * Expose unbind
+ * @param  {Function} fn
+ * @return {Function}
+ * @api public
+ */
+
+module.exports.unbind = function(fn) {
+  if (typeof fn !== 'function') return;
+  if (support) return events.unbind(window, 'hashchange', fn);
+  running = false;
+  return fn;
+};
 
 }, {"event":2,"component-event":2,"ies":3}],
 2: [function(require, module, exports) {
