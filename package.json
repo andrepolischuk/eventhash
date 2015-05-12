@@ -10,7 +10,7 @@
   "repository": "andrepolischuk/eventhash",
   "dependencies": {
     "component-event": "^0.1.4",
-    "ies": "^0.2.0"
+    "ies": "^0.3.0"
   },
   "main": "index.js",
   "author": "Andrey Polischuk <andre.polischuk@gmail.com>",
