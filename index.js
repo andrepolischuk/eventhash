@@ -39,6 +39,7 @@ module.exports = bind.bind = bind;
 
 /**
  * Expose bind
+ *
  * @param  {Function} fn
  * @return {Function}
  * @api public
@@ -55,6 +56,7 @@ function bind(fn) {
 
 /**
  * onhashchange fix for IE<8
+ *
  * @param {Function} fn
  * @param {String} path
  * @api private
@@ -75,6 +77,7 @@ function fix(fn, path) {
 
 /**
  * Expose unbind
+ *
  * @param  {Function} fn
  * @return {Function}
  * @api public

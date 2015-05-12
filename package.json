@@ -7,10 +7,7 @@
     "hashchange",
     "event"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/andrepolischuk/eventhash.git"
-  },
+  "repository": "andrepolischuk/eventhash",
   "dependencies": {
     "component-event": "^0.1.4",
     "ies": "^0.2.0"

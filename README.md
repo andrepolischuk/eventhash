@@ -1,25 +1,12 @@
-# Eventhash
+# eventhash
 
-  Hashchange event shim
+  > Hashchange event shim
 
 ## Instalation
 
-  UMD:
-
-```html
-<script src="https://cdn.rawgit.com/andrepolischuk/eventhash/0.3.0/eventhash.min.js"></script>
-```
-
-  Component(1):
-
 ```sh
+$ npm install --save eventhash
 $ component install andrepolischuk/eventhash
-```
-
-  Npm:
-
-```sh
-$ npm install eventhash
 ```
 
 ## API
@@ -34,13 +21,13 @@ eventhash.bind(function() {
 });
 ```
 
-### eventhash(fn)
-
-  `eventhash.bind` alias
-
 ### eventhash.unbind(fn)
 
   Unbind event 'hashchange' handler
+
+```js
+eventhash.unbind(fn);
+```
 
 ## License
 
