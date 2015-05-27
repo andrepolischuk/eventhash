@@ -6,6 +6,9 @@
 
 ```sh
 $ npm install --save eventhash
+```
+
+```sh
 $ component install andrepolischuk/eventhash
 ```
 
