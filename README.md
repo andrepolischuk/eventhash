@@ -2,14 +2,14 @@
 
   > Hashchange event shim
 
-## Instalation
+## Install
 
 ```sh
-$ npm install --save eventhash
+npm install --save eventhash
 ```
 
 ```sh
-$ component install andrepolischuk/eventhash
+component install andrepolischuk/eventhash
 ```
 
 ## API
